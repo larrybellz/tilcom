@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" type="text/css" href="{% static 'notesapp/homestyle.css'%}">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'notesapp-home'%}" >Notebook</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+        
+            </ul>
+        </nav>
+
+        <div class="messages">
+            {%if messages%}
+                {%for message in messages%}
+                    {{message}}
+                {%endfor%}
+            {%endif%}
+        </div>
+
+        {% block main%}
+        {% endblock %}
+    </div>
+
+
+
+</body>
+</html>

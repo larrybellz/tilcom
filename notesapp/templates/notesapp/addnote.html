@@ -1,0 +1,12 @@
+{%extends 'notesapp/base.html'%}
+{%block main%}
+    <p>working</p>
+    <div class="writeNote">
+        <form action="" method="POST">
+            {% csrf_token%}
+            <input type="text" placeholder="title.." name="title">
+            <textarea name="content" id="" cols="30" rows="10"></textarea>
+            <input type="submit"  id="" value="Post">
+    </form>
+    </div>
+{%endblock%}

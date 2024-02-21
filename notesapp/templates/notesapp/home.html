@@ -1,0 +1,44 @@
+{%extends 'notesapp/base.html'%}
+{%block main%}
+    
+    
+     
+        <div class="main_content">
+           
+
+            <div class="note_list">
+                {% for note in notes %}
+                <ul>
+                    <li class="button"><a href="{% url 'notes-detail' note.id%}">{{note.title}}</a></li>
+                </ul>
+                {%endfor%}
+                
+            </div>
+           
+        
+            <div class="notes_form">
+                <form method="POST">
+                    {% csrf_token%}
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                    <h3>Notes:</h3>
+                    <div>
+                    <textarea name="content" id=""></textarea>
+                    </div>
+                    
+                    <button type="submit" name="Post"  class="button"  >save</button>
+                   <!-- <button class="button" type="">delete</button>-->
+        
+                    
+                </form>
+
+              
+
+
+            </div>
+
+        </div>
+        
+        
+    
+{%endblock%}

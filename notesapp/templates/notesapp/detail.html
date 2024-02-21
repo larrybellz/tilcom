@@ -1,0 +1,44 @@
+{%extends 'notesapp/base.html'%}
+{%block main%}
+    
+    
+    
+        <div class="main_content">
+           
+
+          <!---  <div class="note_list">
+                {% for i in other_objects %}
+                <ul>
+                    <li class="button"><a href="{% url 'notes-detail' note.id%}">{{i.title}}</a></li>
+                </ul>
+                {%endfor%}
+                
+            </div>
+        -->
+        
+            <div class="note_details">
+               
+                
+                <p>{{object.title}}</p>
+
+                <div>
+                    <p>
+                        {{object.content}}
+                    </p>
+
+                </div>
+
+                
+              
+
+             
+            </div>
+            <br>
+            <button class="button" type=""><a href="{% url 'notesapp-home' %}">back</a></button>
+             
+
+        </div>
+        
+        
+    
+{%endblock%}

@@ -1,0 +1,25 @@
+{% extends 'notesapp/base.html'%}
+{%block main%}
+<div class="search">
+    <input type="text" placeholder="search...">
+    <button>search</button>
+    <div class="add_button">
+        <a href="{% url 'notesapp-addnote'%}">write note</a>
+    </div>
+</div>
+
+    <div class="content">
+   
+    {% for note in notes%}
+    
+    <div class="note">
+        <h1>{{note.title}}</h1>
+        <br>
+        <p>{{note.content}}</p>
+        <small>on {{note.date_added}}</small>
+    </div>
+    
+    {%endfor%}
+   
+    </div>
+{% endblock main%}

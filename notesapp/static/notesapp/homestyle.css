@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    border: none;
+    
+
+}
+body{
+    font-style: helvetica;
+   
+
+   
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90vw;
+    max-width: 1100px;
+    background-color:rgb(109, 126, 132);
+    margin:20px auto;
+    height: 90vh;
+    padding-bottom: 20px;
+    
+}
+nav{
+    background-color: rgb(26, 23, 23);
+    height: 50px;
+    text-align: center;
+    border-bottom:2px solid #000000 ;
+   
+    
+}
+nav ul{
+   
+    padding-top: 20px;
+    
+    
+
+}
+nav li{
+    border-radius: 8px;
+    margin: 10px;
+    padding:5px 10px;
+    background-color:#c0eaec ;
+   
+}
+li{
+    list-style: none;
+    display: inline;
+    padding: 5px 10px;
+    margin: 50px 0;
+}
+
+.main_content{
+    
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 30vw auto;
+    min-width: 590px;
+
+}
+.notes_form input{
+    outline: none;
+}
+.note_list{
+  
+    min-width: 180px;
+    max-width: 250px;
+    border:2px solid black;
+    border-left: none;
+    margin: 10px;
+    border-radius: 20px;
+    max-height:75vh ;
+    overflow: auto;
+   
+   
+   
+
+}
+.note_list li{
+    background-color: #c0eaec;
+    border-radius: 15px;
+    
+
+}
+.note_list ul{
+    margin-left: 20px;
+}
+textarea{
+   
+    background:transparent ;
+    outline: none;
+    width: 95%;
+    min-height: 50vh;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #c0eaec;
+    font-size: 16px;
+    resize: none;
+    margin-right: 10px;
+    border: 2px solid black;
+}
+
+.notes_form input{
+    background: transparent;
+    border-bottom:1px solid rgb(26, 22, 22)
+
+}
+
+button, .button{
+    background:#e7e7e7;
+    border:1px solid;
+    font:700 13px helvetica,Arial;
+    height:30px;
+    line-height:28px;
+    text-align:center;
+    box-sizing:border-box;
+}
+button{
+
+    padding:0 20px;
+    width: 50px;
+}
+    
+button:hover, .button:hover{
+    color:#000;
+    background-color:#dadada;
+    }
+
+.note_list::-webkit-scrollbar{
+    display: none;
+}
+
+
+.note_details{
+    background-color: yellow ;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    height: 70vh;
+    width: 60vw;
+
+}
+.backbtn{
+    background-color: red;
+    border: #a9a9a9;
+}
